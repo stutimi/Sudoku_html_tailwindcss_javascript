@@ -1,0 +1,48 @@
+/* General styling for Sudoku grid */
+.sudoku-grid {
+    max-width: 360px;
+    margin: auto;
+}
+
+/* Styling individual Sudoku cells */
+.sudoku-cell {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 1.5rem;
+    background-color: white;
+    border-radius: 6px;
+    transition: background-color 0.2s ease;
+    border: 2px solid #3b82f6;
+    color: #1e3a8a;
+}
+
+/* Highlight cell when focused */
+.sudoku-cell:focus {
+    outline: none;
+    background-color: #bfdbfe;
+}
+
+/* Styling for cells with predefined values */
+.sudoku-cell[data-highlight="true"] {
+    background-color: #f9a8d4;
+    font-weight: bold;
+    color: #1e40af;
+}
+
+/* Popup styling for correct/incorrect feedback */
+.feedback-popup {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 1.5rem;
+    font-weight: bold;
+    z-index: 1000
+
+
+
